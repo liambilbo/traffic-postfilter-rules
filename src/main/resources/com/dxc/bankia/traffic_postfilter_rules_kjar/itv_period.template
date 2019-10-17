@@ -4,89 +4,88 @@
   <attributes/>
   <metadataList/>
   <lhs>
-    <compositePattern>
-      <type>exists</type>
-      <patterns>
-        <fact>
-          <constraintList>
-            <constraints>
-              <fieldConstraint>
-                <value>$minAge</value>
-                <operator>&gt;=</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Vehicle</factType>
-                <fieldName>age</fieldName>
-                <fieldType>Integer</fieldType>
-              </fieldConstraint>
-              <fieldConstraint>
-                <value>$maxAge</value>
-                <operator>&lt;</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Vehicle</factType>
-                <fieldName>age</fieldName>
-                <fieldType>Integer</fieldType>
-              </fieldConstraint>
-              <fieldConstraint>
-                <value>$country</value>
-                <operator>==</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Vehicle</factType>
-                <fieldName>country</fieldName>
-                <fieldType>Comparable</fieldType>
-              </fieldConstraint>
-              <fieldConstraint>
-                <value>$category</value>
-                <operator>==</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Vehicle</factType>
-                <fieldName>category</fieldName>
-                <fieldType>Comparable</fieldType>
-              </fieldConstraint>
-              <fieldConstraint>
-                <operator>== null</operator>
-                <constraintValueType>0</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Vehicle</factType>
-                <fieldName>nextItvDate</fieldName>
-                <fieldType>Date</fieldType>
-              </fieldConstraint>
-            </constraints>
-          </constraintList>
-          <factType>Vehicle</factType>
-          <boundName>$c</boundName>
-          <isNegated>false</isNegated>
-          <window>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$minAge</value>
+            <operator>&gt;=</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
             <parameters/>
-          </window>
-        </fact>
-      </patterns>
-    </compositePattern>
+            <factType>Vehicle</factType>
+            <fieldName>age</fieldName>
+            <fieldType>Integer</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$maxAge</value>
+            <operator>&lt;</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Vehicle</factType>
+            <fieldName>age</fieldName>
+            <fieldType>Integer</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$color</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Vehicle</factType>
+            <fieldName>country</fieldName>
+            <fieldType>Comparable</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$category</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Vehicle</factType>
+            <fieldName>category</fieldName>
+            <fieldType>Comparable</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <operator>== null</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Vehicle</factType>
+            <fieldName>nextItvDate</fieldName>
+            <fieldType>Date</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>Vehicle</factType>
+      <boundName>$c</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
   </lhs>
-  <rhs/>
+  <rhs>
+    <freeForm>
+      <text>modify ($c){ $c.setNextItvDate(addYears($c.getBaseDateToCalculateNextItvDate(),@{duration}))};</text>
+    </freeForm>
+  </rhs>
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
@@ -123,14 +122,14 @@
       </list>
     </entry>
     <entry>
-      <string>$country</string>
+      <string>duration</string>
       <list>
-        <string>Country.ES</string>
-        <string>Country.ES</string>
-        <string>Country.ES</string>
-        <string>Country.ES</string>
-        <string>Country.ES</string>
-        <string>Country.ES</string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
     <entry>
@@ -153,6 +152,17 @@
         <string>0</string>
         <string>3</string>
         <string>5</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$color</string>
+      <list>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
       </list>
     </entry>
   </table>

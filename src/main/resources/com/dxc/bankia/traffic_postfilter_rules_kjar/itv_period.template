@@ -88,7 +88,7 @@
   </lhs>
   <rhs>
     <freeForm>
-      <text>    modify ($c){ setNextItvDate(addYears($c.getBaseDateToCalculateNextItvDate(),@{duration}))};</text>
+      <text>    modify ($c){ $c.setNextItvDate(addYears($c.getBaseDateToCalculateNextItvDate(),@{duration}))};</text>
     </freeForm>
   </rhs>
   <imports>

@@ -86,11 +86,7 @@
       </patterns>
     </compositePattern>
   </lhs>
-  <rhs>
-    <freeForm>
-      <text>modify ($c) {}</text>
-    </freeForm>
-  </rhs>
+  <rhs/>
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>

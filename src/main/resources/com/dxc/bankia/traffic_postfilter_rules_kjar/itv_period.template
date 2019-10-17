@@ -96,6 +96,9 @@
       <org.kie.soup.project.datamodel.imports.Import>
         <type>com.dxc.bankia.model.Vehicle</type>
       </org.kie.soup.project.datamodel.imports.Import>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>com.dxc.bankia.model.functions.DateUtils</type>
+      </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
   <packageName>com.dxc.bankia.traffic_postfilter_rules_kjar</packageName>

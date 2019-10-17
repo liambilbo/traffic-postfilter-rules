@@ -29,32 +29,133 @@
           <factAlias>Scenario description</factAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements/>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>age</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1571332803466</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1571331535138</name>
+            <className>com.dxc.bankia.model.Vehicle</className>
+          </factIdentifier>
+          <className>int</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>age</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>country</step>
+            </ExpressionElement>
+          </expressionElements>
           <expressionIdentifier>
             <name>1571331535138</name>
             <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier>
-            <name>Empty</name>
-            <className>java.lang.Void</className>
-          </factIdentifier>
-          <className>java.lang.Void</className>
-          <factAlias>INSTANCE 4</factAlias>
-          <expressionAlias>PROPERTY 4</expressionAlias>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>com.dxc.bankia.model.Country</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>country</expressionAlias>
         </FactMapping>
         <FactMapping>
-          <expressionElements/>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>category</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1571332917628</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>com.dxc.bankia.model.Vehicle$Category</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>category</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>registrationDate</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1571332857214</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.util.Date</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>registrationDate</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>lastItvDate</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1571332970297</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.util.Date</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>lastItvDate</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>nextItvDate</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1571332977038</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.util.Date</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>nextItvDate</expressionAlias>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Vehicle</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>nextItvDate</step>
+            </ExpressionElement>
+          </expressionElements>
           <expressionIdentifier>
             <name>0|2</name>
             <type>EXPECT</type>
           </expressionIdentifier>
-          <factIdentifier>
-            <name>Empty</name>
-            <className>java.lang.Void</className>
-          </factIdentifier>
-          <className>java.lang.Void</className>
-          <factAlias>INSTANCE 2</factAlias>
-          <expressionAlias>PROPERTY 2</expressionAlias>
+          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <className>java.util.Date</className>
+          <factAlias>Vehicle</factAlias>
+          <expressionAlias>nextItvDate</expressionAlias>
         </FactMapping>
       </factMappings>
       <dmoSession>default</dmoSession>
@@ -68,10 +169,6 @@
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[2]/expressionIdentifier"/>
           </FactMappingValue>
           <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
-          </FactMappingValue>
-          <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
             <rawValue class="string">1</rawValue>
@@ -79,6 +176,36 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/expressionIdentifier"/>
+            <rawValue class="string">3</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
+            <rawValue class="string">=ES</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <rawValue class="string">7/10/1968</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
+            <rawValue class="string">CAR</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[7]/expressionIdentifier"/>
+            <rawValue class="string">7/10/2010</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/expressionIdentifier"/>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[9]/expressionIdentifier"/>
+            <rawValue class="string">7/10/2011</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../../simulationDescriptor"/>
@@ -89,6 +216,9 @@
     <imports>
       <Import>
         <type>com.dxc.bankia.model.Vehicle</type>
+      </Import>
+      <Import>
+        <type>com.dxc.bankia.model.Country</type>
       </Import>
     </imports>
   </imports>

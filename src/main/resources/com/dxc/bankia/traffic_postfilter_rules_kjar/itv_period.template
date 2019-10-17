@@ -77,7 +77,7 @@
             </constraints>
           </constraintList>
           <factType>Vehicle</factType>
-          <boundName>c</boundName>
+          <boundName>$c</boundName>
           <isNegated>false</isNegated>
           <window>
             <parameters/>

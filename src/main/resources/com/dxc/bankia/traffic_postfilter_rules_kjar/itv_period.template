@@ -88,7 +88,7 @@
   </lhs>
   <rhs>
     <freeForm>
-      <text>modify ($c){ $c.setNextItvDate(null)};</text>
+      <text>modify ($c) {}</text>
     </freeForm>
   </rhs>
   <imports>

@@ -86,11 +86,7 @@
       </patterns>
     </compositePattern>
   </lhs>
-  <rhs>
-    <freeForm>
-      <text>    modify ($c){ $c.setNextItvDate(addYears($c.getBaseDateToCalculateNextItvDate(),@{duration}))};</text>
-    </freeForm>
-  </rhs>
+  <rhs/>
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
@@ -124,17 +120,6 @@
         <string>Vehicle.Category.BIKE</string>
         <string>Vehicle.Category.BIKE</string>
         <string>Vehicle.Category.BIKE</string>
-      </list>
-    </entry>
-    <entry>
-      <string>duration</string>
-      <list>
-        <string>4</string>
-        <string>2</string>
-        <string>1</string>
-        <string>3</string>
-        <string>2</string>
-        <string>1</string>
       </list>
     </entry>
     <entry>

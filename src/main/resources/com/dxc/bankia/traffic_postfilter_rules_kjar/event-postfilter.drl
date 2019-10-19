@@ -1,2 +1,5 @@
-package com.dxc.bankia.traffic_postfilter_rules_kjar;
+package com.dxc.bankia.traffic_postfilter_rules_kjar.core;
+
+
+
 

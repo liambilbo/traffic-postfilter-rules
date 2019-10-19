@@ -57,15 +57,21 @@
             <ExpressionElement>
               <step>country</step>
             </ExpressionElement>
+            <ExpressionElement>
+              <step>declaringClass</step>
+            </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1571331535138</name>
+            <name>1571467011415</name>
             <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
-          <className>com.dxc.bankia.model.Country</className>
+          <factIdentifier>
+            <name>1571331535138</name>
+            <className>com.dxc.bankia.model.Vehicle</className>
+          </factIdentifier>
+          <className>java.lang.Class</className>
           <factAlias>Vehicle</factAlias>
-          <expressionAlias>country</expressionAlias>
+          <expressionAlias>country.declaringClass</expressionAlias>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -180,11 +186,6 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
-            <rawValue class="string">ES</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
             <rawValue class="string">7/10/1968</rawValue>
           </FactMappingValue>
@@ -196,16 +197,22 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[7]/expressionIdentifier"/>
-            <rawValue class="string">7/10/2010</rawValue>
+            <rawValue class="string">7-Oct-2010</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/expressionIdentifier"/>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[9]/expressionIdentifier"/>
-            <rawValue class="string">7/10/2011</rawValue>
+            <rawValue class="string">7-Oct-2011</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
+            <rawValue class="string">ES</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../../simulationDescriptor"/>

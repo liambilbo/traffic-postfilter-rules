@@ -101,10 +101,13 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1571332857214</name>
+            <name>1571467257146</name>
             <type>GIVEN</type>
           </expressionIdentifier>
-          <factIdentifier reference="../../FactMapping[3]/factIdentifier"/>
+          <factIdentifier>
+            <name>1571331535138</name>
+            <className>com.dxc.bankia.model.Vehicle</className>
+          </factIdentifier>
           <className>java.util.Date</className>
           <factAlias>Vehicle</factAlias>
           <expressionAlias>registrationDate</expressionAlias>
@@ -186,11 +189,6 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
-            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
-            <rawValue class="string">7/10/1968</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[3]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
             <rawValue class="string">CAR</rawValue>
           </FactMappingValue>
@@ -213,6 +211,11 @@
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[4]/expressionIdentifier"/>
             <rawValue class="string">ES</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <rawValue class="string">7-Oct-1968</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../../simulationDescriptor"/>

@@ -4,10 +4,11 @@ import java.lang.Number;
 import com.dxc.bankia.model.Event;
 import com.dxc.bankia.model.Vehicle;
 import java.util.Date;
+import com.dxc.bankia.model.functions.DateUtils;
 
 rule "event-itv-compliance"
 	dialect "mvel"
 	when
-		$e : Event( type == Event.Type.REQUEST_CAR_ITV_COMPLIANCE , vehicle != null , vehicle.nextItvDate before ( new Date() ) )
+		$e : Event( type == Event.Type.REQUEST_CAR_ITV_COMPLIANCE , vehicle != null , vehicle.nextItvDate before ( today() ) )
 	then
 end

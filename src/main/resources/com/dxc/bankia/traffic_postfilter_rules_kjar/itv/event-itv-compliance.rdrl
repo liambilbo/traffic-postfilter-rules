@@ -1,0 +1,9 @@
+package com.dxc.bankia.traffic_postfilter_rules_kjar.itv;
+
+import java.lang.Number;
+
+rule "event-itv-compliance"
+	dialect "mvel"
+	when
+	then
+end

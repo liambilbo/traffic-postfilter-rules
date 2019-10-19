@@ -34,7 +34,7 @@
             <fieldType>Integer</fieldType>
           </fieldConstraint>
           <fieldConstraint>
-            <value>$color</value>
+            <value>$country</value>
             <operator>==</operator>
             <constraintValueType>7</constraintValueType>
             <expression>
@@ -96,7 +96,7 @@
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
-  <packageName>com.dxc.bankia.traffic_postfilter_rules_kjar</packageName>
+  <packageName>com.dxc.bankia.traffic_postfilter_rules_kjar.itv</packageName>
   <isNegated>false</isNegated>
   <table>
     <entry>
@@ -133,6 +133,17 @@
       </list>
     </entry>
     <entry>
+      <string>$country</string>
+      <list>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>1</string>
@@ -152,17 +163,6 @@
         <string>0</string>
         <string>3</string>
         <string>5</string>
-      </list>
-    </entry>
-    <entry>
-      <string>$color</string>
-      <list>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
-        <string></string>
       </list>
     </entry>
   </table>

@@ -84,7 +84,7 @@
   <rhs>
     <freeForm>
       <text>modify($vehicle) {
-DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{duration})
+DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{$duration})
 }</text>
     </freeForm>
   </rhs>
@@ -114,12 +114,6 @@ DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{duration})
       </list>
     </entry>
     <entry>
-      <string>duration</string>
-      <list>
-        <string></string>
-      </list>
-    </entry>
-    <entry>
       <string>$country</string>
       <list>
         <string></string>
@@ -133,6 +127,12 @@ DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{duration})
     </entry>
     <entry>
       <string>$minAge</string>
+      <list>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
+      <string>$duration</string>
       <list>
         <string></string>
       </list>

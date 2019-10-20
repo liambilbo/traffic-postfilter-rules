@@ -121,6 +121,7 @@
         <string>3</string>
         <string>5</string>
         <string>100</string>
+        <string></string>
       </list>
     </entry>
     <entry>
@@ -132,6 +133,7 @@
         <string>Vehicle.Category.BIKE</string>
         <string>Vehicle.Category.BIKE</string>
         <string>Vehicle.Category.BIKE</string>
+        <string></string>
       </list>
     </entry>
     <entry>
@@ -143,6 +145,7 @@
         <string>Country.ES</string>
         <string>Country.ES</string>
         <string>Country.ES</string>
+        <string></string>
       </list>
     </entry>
     <entry>
@@ -154,6 +157,7 @@
         <string>4</string>
         <string>5</string>
         <string>6</string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
@@ -165,9 +169,10 @@
         <string>0</string>
         <string>3</string>
         <string>5</string>
+        <string></string>
       </list>
     </entry>
   </table>
   <idCol>6</idCol>
-  <rowsCount>6</rowsCount>
+  <rowsCount>7</rowsCount>
 </rule>

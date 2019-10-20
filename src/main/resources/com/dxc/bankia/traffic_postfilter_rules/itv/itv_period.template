@@ -86,7 +86,7 @@
       <fieldValues>
         <fieldValue>
           <field>nextItvDate</field>
-          <value>DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),$duration)</value>
+          <value>DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),${duration})</value>
           <nature>3</nature>
           <type>Date</type>
         </fieldValue>

@@ -87,10 +87,17 @@
     </fact>
   </lhs>
   <rhs>
-    <freeForm>
-      <text>//modify ($c){ $c.setNextItvDate(addYears($c.getBaseDateToCalculateNextItvDate(),@{duration}))};
-modify ($c){ $c.setNextItvDate(null)};</text>
-    </freeForm>
+    <modify>
+      <fieldValues>
+        <fieldValue>
+          <field>nextItvDate</field>
+          <value>20-Oct-2019</value>
+          <nature>1</nature>
+          <type>Date</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>$c</variable>
+    </modify>
   </rhs>
   <imports>
     <imports>
@@ -125,17 +132,6 @@ modify ($c){ $c.setNextItvDate(null)};</text>
         <string>Vehicle.Category.BIKE</string>
         <string>Vehicle.Category.BIKE</string>
         <string>Vehicle.Category.BIKE</string>
-      </list>
-    </entry>
-    <entry>
-      <string>duration</string>
-      <list>
-        <string>4</string>
-        <string>2</string>
-        <string>1</string>
-        <string>3</string>
-        <string>2</string>
-        <string>1</string>
       </list>
     </entry>
     <entry>

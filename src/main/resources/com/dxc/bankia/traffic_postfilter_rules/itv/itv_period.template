@@ -91,7 +91,7 @@
       <fieldValues>
         <fieldValue>
           <field>nextItvDate</field>
-          <value>getLastItvDate()</value>
+          <value>$c.getLastItvDate()</value>
           <nature>3</nature>
           <type>Date</type>
         </fieldValue>

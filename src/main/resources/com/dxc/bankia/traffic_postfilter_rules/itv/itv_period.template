@@ -91,8 +91,8 @@
       <fieldValues>
         <fieldValue>
           <field>nextItvDate</field>
-          <value>20-Oct-2019</value>
-          <nature>1</nature>
+          <value>lastItvDate</value>
+          <nature>3</nature>
           <type>Date</type>
         </fieldValue>
       </fieldValues>

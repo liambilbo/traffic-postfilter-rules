@@ -82,17 +82,11 @@
     </fact>
   </lhs>
   <rhs>
-    <modify>
-      <fieldValues>
-        <fieldValue>
-          <field>nextItvDate</field>
-          <value>DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{duration})</value>
-          <nature>3</nature>
-          <type>Date</type>
-        </fieldValue>
-      </fieldValues>
-      <variable>$vehicle</variable>
-    </modify>
+    <freeForm>
+      <text>modify($vehicle) {
+DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{duration})
+}</text>
+    </freeForm>
   </rhs>
   <imports>
     <imports>
@@ -115,6 +109,12 @@
     </entry>
     <entry>
       <string>$category</string>
+      <list>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
+      <string>duration</string>
       <list>
         <string></string>
       </list>

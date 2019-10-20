@@ -104,40 +104,70 @@ DateUtils.addYears($c.getBaseDateToCalculateNextItvDate(),@{$duration})
     <entry>
       <string>$maxAge</string>
       <list>
-        <string></string>
+        <string>4</string>
+        <string>10</string>
+        <string>100</string>
+        <string>3</string>
+        <string>10</string>
+        <string>100</string>
       </list>
     </entry>
     <entry>
       <string>$category</string>
       <list>
         <string></string>
+        <string>Vehicle.Category.CAR</string>
+        <string>Vehicle.Category.CAR</string>
+        <string>Vehicle.Category.BIKE</string>
+        <string>Vehicle.Category.BIKE</string>
+        <string>Vehicle.Category.BIKE</string>
       </list>
     </entry>
     <entry>
       <string>$country</string>
       <list>
         <string></string>
+        <string>Country.ES</string>
+        <string>Country.ES</string>
+        <string>Country.ES</string>
+        <string>Country.ES</string>
+        <string>Country.ES</string>
       </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
-        <string>1</string>
+        <string>0</string>
+        <string>2</string>
+        <string>3</string>
+        <string>4</string>
+        <string>5</string>
+        <string>6</string>
       </list>
     </entry>
     <entry>
       <string>$minAge</string>
       <list>
         <string></string>
+        <string>4</string>
+        <string>10</string>
+        <string>0</string>
+        <string>3</string>
+        <string>10</string>
       </list>
     </entry>
     <entry>
       <string>$duration</string>
       <list>
         <string></string>
+        <string>2</string>
+        <string>1</string>
+        <string>3</string>
+        <string>2</string>
+        <string>1</string>
       </list>
     </entry>
   </table>
-  <idCol>1</idCol>
-  <rowsCount>1</rowsCount>
+  <idCol>6</idCol>
+  <rowsCount>6</rowsCount>
 </rule>

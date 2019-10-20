@@ -1,2 +1,6 @@
 package com.dxc.bankia.traffic_postfilter_rules.core;
 
+import com.dxc.bankia.model.Notification;
+
+
+

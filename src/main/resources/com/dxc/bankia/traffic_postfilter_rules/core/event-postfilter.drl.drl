@@ -1,6 +1,6 @@
-package com.dxc.bankia.traffic_postfilter_rules_kjar.core;
+package com.dxc.bankia.traffic_postfilter_rules.core;
 
-import com.dxc.bankia.services.Notification;
+import com.dxc.bankia.model.Notification;
 
 
 

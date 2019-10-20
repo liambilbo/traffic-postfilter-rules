@@ -1,4 +1,4 @@
-package com.dxc.bankia.traffic_postfilter_rules_kjar.itv;
+package com.dxc.bankia.traffic_postfilter_rules.itv;
 
 import java.lang.Number;
 import com.dxc.bankia.model.Event;
@@ -10,7 +10,7 @@ import com.dxc.bankia.model.Notification;
 rule "event-itv-compliance"
 	dialect "mvel"
 	when
-		$e : Event( $t : type == Event.Type.REQUEST_CAR_ITV_COMPLIANCE , vehicle != null , vehicle.nextItvDate before ( today() ) )
+		$e : Event( $t : type == Event.Type.REQUEST_CAR_ITV_COMPLIANCE , vehicle != null , vehicle.nextItvDate before ( DateUtils.today() ) )
 	then
 		Notification fact0 = new Notification();
 		fact0.setEventId( $e.getId() );

@@ -105,7 +105,7 @@
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>modify(f1) {
-setNextItvDate(DateUtils.addYears($vehicle.getBaseDateToCalculateNextItvDate(),@{duration}))
+setNextItvDate(DateUtils.addYears(f1.getBaseDateToCalculateNextItvDate(),@{duration}))
 }</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>

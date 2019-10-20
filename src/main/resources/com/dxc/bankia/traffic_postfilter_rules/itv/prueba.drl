@@ -1,7 +1,5 @@
 package com.dxc.bankia.traffic_postfilter_rules.itv;
 
-
-package com.dxc.bankia.traffic_postfilter_rules.itv;
 import com.dxc.bankia.model.Vehicle;
 import com.dxc.bankia.model.functions.DateUtils;
 

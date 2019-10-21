@@ -6,6 +6,10 @@
       <attributeName>enabled</attributeName>
       <value>false</value>
     </attribute>
+    <attribute>
+      <attributeName>salience</attributeName>
+      <value>-50</value>
+    </attribute>
   </attributes>
   <metadataList/>
   <lhs>

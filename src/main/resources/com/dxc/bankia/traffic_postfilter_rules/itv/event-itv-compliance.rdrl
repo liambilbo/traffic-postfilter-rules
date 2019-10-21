@@ -7,7 +7,7 @@ import com.dxc.bankia.model.functions.DateUtils;
 rule "event-itv-compliance"
 	dialect "mvel"
 	when
-		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null , vehicle.nextItvDate != null )
+		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , $v : vehicle != null , vehicle.nextItvDate != null )
 	then
 		Notification fact0 = new Notification();
 		fact0.setEventId( $e.getId() );

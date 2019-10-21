@@ -1,7 +1,12 @@
 <rule>
   <name>itv_period</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>enabled</attributeName>
+      <value>false</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <fact>

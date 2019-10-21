@@ -115,7 +115,7 @@ setNextItvDate(DateUtils.addYears($vehicle.getBaseDateToCalculateNextItvDate(),@
     <entry>
       <string>$category</string>
       <list>
-        <string></string>
+        <string>Vehicle.Category.CAR</string>
         <string>Vehicle.Category.CAR</string>
         <string>Vehicle.Category.CAR</string>
         <string>Vehicle.Category.BIKE</string>
@@ -126,7 +126,7 @@ setNextItvDate(DateUtils.addYears($vehicle.getBaseDateToCalculateNextItvDate(),@
     <entry>
       <string>$country</string>
       <list>
-        <string></string>
+        <string>Country.ES</string>
         <string>Country.ES</string>
         <string>Country.ES</string>
         <string>Country.ES</string>
@@ -148,7 +148,7 @@ setNextItvDate(DateUtils.addYears($vehicle.getBaseDateToCalculateNextItvDate(),@
     <entry>
       <string>$minAge</string>
       <list>
-        <string></string>
+        <string>0</string>
         <string>4</string>
         <string>10</string>
         <string>0</string>
@@ -159,7 +159,7 @@ setNextItvDate(DateUtils.addYears($vehicle.getBaseDateToCalculateNextItvDate(),@
     <entry>
       <string>$duration</string>
       <list>
-        <string></string>
+        <string>4</string>
         <string>2</string>
         <string>1</string>
         <string>3</string>

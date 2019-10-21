@@ -305,7 +305,7 @@ setNextItvDate(DateUtils.addYears(f1.getBaseDateToCalculateNextItvDate(),@{durat
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Country.FR</valueString>
+        <valueString>Country.ES</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -345,7 +345,11 @@ setNextItvDate(DateUtils.addYears(f1.getBaseDateToCalculateNextItvDate(),@{durat
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../list[4]/value[5]"/>
+      <value>
+        <valueString>Country.ES</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
       <value>
         <valueString>Vehicle.Category.BIKE</valueString>
         <dataType>STRING</dataType>
@@ -382,7 +386,11 @@ setNextItvDate(DateUtils.addYears(f1.getBaseDateToCalculateNextItvDate(),@{durat
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../list[4]/value[5]"/>
+      <value>
+        <valueString>Country.ES</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
       <value>
         <valueString>Vehicle.Category.BIKE</valueString>
         <dataType>STRING</dataType>

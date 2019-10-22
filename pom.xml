@@ -4,16 +4,20 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dxc.bankia</groupId>
   <artifactId>traffic-postfilter-rules-kjar</artifactId>
-  <version>1.3.0</version>
+  <version>1.4.0</version>
   <packaging>kjar</packaging>
   <name>traffic-postfilter-rules-kjar</name>
   <description></description>
-  <repositories>
-      <repository>
-          <id>maven-public</id>
-          <url>http://localhost:8081/repository/maven-public/</url>
-      </repository>
-  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>local-maven</id>
+      <url>http://nexus:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>local-maven</id>
+      <url>http://nexus:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
@@ -100,16 +104,12 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
-      <distributionManagement>
-        <snapshotRepository>
-            <id>local-maven</id>
-            <url>http://nexus:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>local-maven</id>
-            <url>http://nexus:8081/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
+  <repositories>
+    <repository>
+      <id>maven-public</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>

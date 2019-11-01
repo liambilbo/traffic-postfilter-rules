@@ -18,19 +18,3 @@ rule "event-itv-compliance"
 		fact0.setMessage( "last itv date was "+DateUtils.toString($e.getVehicle().getLastItvDate()) );
 		insert( fact0 );
 end
-
-rule "itv-period-notaloocated"
-	dialect "mvel"
-	when
-		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null )
-		Vehicle(nextItvDate == null ) from $e.getVehicle()
-	then
-        Notification fact0 = new Notification();
-		fact0.setEventId( $e.getId() );
-		fact0.setEventType( $t );
-		fact0.setType( Notification.Type.NOT_COMPLIANCE );
-		fact0.setMessage( "last itv date was "+DateUtils.toString($e.getVehicle().getLastItvDate()) );
-		insert( fact0 );
-end
-
-

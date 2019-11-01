@@ -10,3 +10,13 @@ rule "itv set date"
      then
       insert($v);
 end
+
+rule "itv-period-not-allocated"
+	dialect "mvel"
+	when
+		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null )
+		Vehicle(nextItvDate == null ) from $e.getVehicle()
+	then
+     String message="error - event id "+((Event)$so.getCore()).getId() ;
+     channels["error-channel"].send(message);
+end

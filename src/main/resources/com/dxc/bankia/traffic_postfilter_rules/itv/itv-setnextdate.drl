@@ -2,6 +2,9 @@ package com.dxc.bankia.traffic_postfilter_rules.itv;
 
 import com.dxc.bankia.model.Event;
 import com.dxc.bankia.model.Vehicle;
+import com.dxc.bankia.services.FinderService;
+
+global FinderService finderService;
 
 rule "itv set date"
 	when

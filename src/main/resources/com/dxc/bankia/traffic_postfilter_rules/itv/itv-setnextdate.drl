@@ -17,8 +17,9 @@ end
 rule "itv-period-not-allocated"
 salience -25
 	when
-		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null )
-		$v : Vehicle(nextItvDate == null ) from $e.getVehicle()
+		$v : Vehicle(nextItvDate == null )
+		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle == $v )
+
 	then
      String message="error - event id "+$e.getId() +" for vehicle "+$v+"itv period not found";
      channels["error-channel"].send(message);

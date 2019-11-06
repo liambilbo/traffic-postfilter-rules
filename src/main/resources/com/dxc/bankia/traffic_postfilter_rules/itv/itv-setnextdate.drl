@@ -7,9 +7,19 @@ import com.dxc.bankia.services.FinderService;
 global FinderService finderService;
 
 rule "itv set date"
+salience 25
 	when
 		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null )
 		$v : Vehicle(nextItvDate == null) from $e.getVehicle()
+     then
+      insert($v);
+end
+
+rule "insert vehicle"
+salience 50
+	when
+		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null )
+		$v : Vehicle() from $e.getVehicle()
      then
       insert($v);
 end

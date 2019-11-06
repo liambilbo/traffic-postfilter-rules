@@ -11,7 +11,7 @@ rule "event-itv-compliance"
 		$e : Event( $t : type == ( Event.Type.REQUEST_CAR_ITV_COMPLIANCE ) , vehicle != null )
 		Vehicle(nextItvDate != null , nextItvDate before ( DateUtils.today() ) ) from $e.getVehicle()
 	then
-	    System.out.println("Notification fire")
+	    System.out.println("Notification fire");
         Notification fact0 = new Notification();
 		fact0.setEventId( $e.getId() );
 		fact0.setEventType( $t );

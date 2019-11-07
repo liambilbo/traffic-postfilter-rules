@@ -1,2 +1,19 @@
 package com.dxc.bankia.traffic_postfilter_rules.sanction;
 
+rule "Driver with 10 or more points a notification"
+    when
+        $d: Driver()
+        Number(intValue >= 10) from accumulate(
+            Santion(
+                $p: points
+            ) from collect(Sanction(driver = $d)),
+            init(int count = 0;),
+            action(count += $p;),
+            reverse(count -= $p;),
+            result(count)
+        )
+    then
+    
+
+end
+
